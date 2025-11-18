@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+.custom-font {
+    font-family: "Stack Sans Notch", system-ui;
+}
+
+.ambient-wrapper {
+    position: relative;
+}
+
+.ambient-blob1,
+.ambient-blob2 {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.55;
+    animation: float 10s infinite ease-in-out;
+}
+
+.ambient-blob1 {
+    background: #a855f7;
+    top: -40px;
+    left: -60px;
+}
+
+.ambient-blob2 {
+    background: #3b82f6;
+    bottom: -40px;
+    right: -60px;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(40px, -20px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
