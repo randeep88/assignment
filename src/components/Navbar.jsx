@@ -2,15 +2,20 @@ import { useState } from "react";
 import { Link } from "react-router";
 import AddUserForm from "./AddUserForm";
 import "../App.css";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [openForm, setOpenForm] = useState(false);
 
   return (
     <div className="z-50 flex items-center shadow-2xl justify-between py-4 border-b border-gray-800 lg:px-20 sm:px-10 px-3 bg-gray-900 sticky top-0 w-full">
-      <h1 className="font-semibold lg:text-xl text-base custom-font">
-        User Manager
-      </h1>
+      <Link to="/">
+        <h1 className="font-semibold lg:text-xl text-base custom-font flex items-center gap-2">
+          <img src={logo} alt="" className="w-7 h-7" />
+          <p className="hidden lg:block md:block sm:block">User Manager</p>
+          <p className="lg:hidden md:hidden sm:hidden">UM</p>
+        </h1>
+      </Link>
       <div className="flex items-center lg:gap-10 gap-5">
         <Link
           className="p-1 hover:text-blue-600 transition-all text-xs lg:text-base"
