@@ -19,14 +19,14 @@ const DeleteUser = ({ setOpenDelete, handleDeleteUser }) => {
           <button
             onClick={() => setOpenDelete(false)}
             type="submit"
-            className="lg:p-2 p-1.5 lg:px-4 px-2 lg:text-base text-xs active:scale-95 rounded-lg border border-red-600 hover:border-red-700 text-red-600  transition-all"
+            className="lg:p-2 p-1.5 lg:px-4 px-3 lg:text-base text-sm active:scale-95 rounded-lg border border-red-600 hover:border-red-700 text-red-600  transition-all"
           >
             Cancel
           </button>
           <button
             onClick={onDelete}
             type="submit"
-            className="lg:p-2 p-1.5 lg:px-4 px-2 lg:text-base text-xs active:scale-95 rounded-lg bg-red-600 hover:bg-red-700 transition-all text-white"
+            className="lg:p-2 p-1.5 lg:px-4 px-3 lg:text-base text-sm active:scale-95 rounded-lg bg-red-600 hover:bg-red-700 transition-all text-white"
           >
             Delete
           </button>

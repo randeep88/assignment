@@ -65,13 +65,13 @@ const EditUser = ({ setOpenEdit, selectedUser, handleEditUser }) => {
             <button
               onClick={() => setOpenEdit(false)}
               type="submit"
-              className="lg:p-2 p-1.5 lg:px-4 px-2 lg:text-base text-xs active:scale-95 rounded-lg border border-blue-600 hover:border-blue-700 text-blue-600  transition-all"
+              className="lg:p-2 p-1.5 lg:px-4 px-3 lg:text-base text-sm active:scale-95 rounded-lg border border-blue-600 hover:border-blue-700 text-blue-600  transition-all"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="lg:p-2 p-1.5 lg:px-4 px-2 lg:text-base text-xs active:scale-95 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all text-white"
+              className="lg:p-2 p-1.5 lg:px-4 px-3 lg:text-base text-sm active:scale-95 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all text-white"
             >
               Submit
             </button>
